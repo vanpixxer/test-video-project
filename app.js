@@ -20,3 +20,12 @@ btn.addEventListener("click", function() {
 });
 // pause() and play() are methods on the Video Object
 // we didn't use the toggle() method because we wanted to add video functionality
+
+// target preloader
+const preloader = document.querySelector('.preloader');
+// listen to load event on the Window
+window.addEventListener('load', function() {
+    // target preloader and add class of hide-preloader
+    // we want to hide the preloader  once the page is fully loaded
+    preloader.classList.add("hide-preloader");
+})
