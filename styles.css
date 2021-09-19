@@ -71,6 +71,10 @@ h1 {
   transition: all 0.3s linear;
 }
 
+.slide .switch {
+  left: 50%;
+}
+
 /* header after */
  header::after {
   content: "";
