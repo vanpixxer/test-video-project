@@ -1,0 +1,84 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Avenir', sans-serif;
+  background: var(--clr-grey-10);
+  color: #fffcdd;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+header {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.video-container {
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+h1 {
+    color: #fffcdd;
+    font-size: 3rem;
+}
+
+.switch-btn {
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+.switch-btn span {
+  display: inline-block;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #805841;
+}
+
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #49a6e9;
+  border-radius: 0.5rem;
+  margin: 0;
+  display: block;
+  transition: all 0.3s linear;
+}
+
+/* header after */
+ header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+} 
